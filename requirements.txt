@@ -1,1 +1,3 @@
 label-studio    # pip install label-studio
+ultralytics     # pip install ultralytics
+jupyter         # pip install jupyter
