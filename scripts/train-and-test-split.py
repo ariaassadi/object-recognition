@@ -42,3 +42,5 @@ def move_files(file_list, source_images, source_labels, dest_images, dest_labels
 # Move files to respective directories in processed_data/
 move_files(train_files, original_images_dir, original_labels_dir, os.path.join(processed_images_dir, 'train'), os.path.join(processed_labels_dir, 'train'))
 move_files(val_files, original_images_dir, original_labels_dir, os.path.join(processed_images_dir, 'val'), os.path.join(processed_labels_dir, 'val'))
+
+print("Photos moved successfully.")
