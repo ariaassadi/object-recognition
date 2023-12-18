@@ -1,20 +1,26 @@
+## Requirements
+Please make sure to install all the required packages in `requirements.txt` with `pip install`, preferably in a virtual environment.
+
 ## Instructions
-In order to train the model, you need to have a folder in the same directory as the GitHub repo, called `datasets/`, with the data of images and their corresponding labels. Your data structure should look like this:
+In order to train the model, you need to have a folder called `datasets/`, at the same level as the GitHub repository, with the relevant training and validation data. Instructions for how to prepare this folder, can be found in `prepare_datasets/`. When the preparation is done, the file structure should look like this:
 
 ```
 ├── datasets
-│   ├── mimmi_chairs_labeled_data
-│   │   ├── classes.txt
-│   │   ├── images
+│   ├── processed_data
 │   │   ├── labels
-│   │   └── notes.json
+│   │   └── images
+│   ├── add-more-training-data.py
 │   └── train-and-test-split.py
 └── object-recognition
-    ├── dataset.yaml
-    └── <other-contents-in-the-GitHub-repo>
+    └── <contents-in-this-GitHub-repo>
 ```
-Note: The folder "mimmi_chairs_labeled_data" can be downloaded from Box, and a copy of "train-and-test-split.py" is stored on GitHub (`object-recognition/scripts`).
-Before executing the code, please go to `datasets/` and run `train-and-test-split.py`.
 
-### Requirements
-Please make sure to install all the required packages in `requirements.txt` with `pip install`, preferably in a virtual environment.
+## Things left to do
+1. Combine the three folders and delted duplicates
+2. Remove all photos that are already labelled by Aron. Put the new photos in `processed_data/images/train_big`
+3. Use the trained model to predict labels on `processed_data/images/train_big`. But the results in `processed_data/labels/train_big`.
+4. Manually adjust the predicted labels to make `train_big` more realible
+5. Train a new model with all the available training data (`train` and `train_big`)
+6. Evaluate the results on `processed_data/images/val`
+* Write the report
+* Project presentation
