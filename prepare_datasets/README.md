@@ -16,7 +16,6 @@ datasets
 │   ├── labels
 │   └── notes.json
 └── train-and-test-split.py
-
 ```
 This script should create a new folder called `processed_data/`
 
