@@ -5,8 +5,8 @@ These scripts are used to prepare the `datasets/` folder. If you use the virtual
 Create an empty directory called `datasets/` and put the scripts of this folder inside `datasets/`.
 
 ## Step 2
-### train-test-split.py
-The folder `mimmi_chairs_labeled_data/` can be downloaded from Box. Before running the script `train-test-split.py`, please make sure that your file structure looks like this:
+### train-and-val-split.py
+The folder `mimmi_chairs_labeled_data/` can be downloaded from Box. Before running the script `train-and-val-split.py`, please make sure that your file structure looks like this:
 
 ```
 datasets
@@ -15,7 +15,7 @@ datasets
 │   ├── images
 │   ├── labels
 │   └── notes.json
-└── train-and-test-split.py
+└── train-and-val-split.py
 ```
 This script should create a new folder called `processed_data/`
 
@@ -32,7 +32,7 @@ datasets
 ├── processed_data
 │   ├── images
 │   └── labels
-└── train-and-test-split.py
+└── train-and-val-split.py
 ```
 This script should create a new folder called `processed_data/images/train_big`
 

@@ -1,0 +1,6 @@
+train: ../../../../..//mimer/NOBACKUP/groups/snic2022-23-105/processed_data/images/train_big  # Path to training images
+val: ../../../../..//mimer/NOBACKUP/groups/snic2022-23-105/processed_data/images/test         # Path to validation images
+
+nc: 15  # Number of classes
+names: ['MG Basic Chair', 'MG Curvy Dining Chair', 'MG Curvy Handles Chair', 'MG Fancy Backed Chair', 'MG Fancy Dining Chair', 'MG Fancy Rocking Chair', 'MG Flowing Wooden Chair', 'MG Glossy Dining Chair', 'MG No Back Chair', 'MG Plain Dining Chair', 'MG Plush Child Chair', 'MG Plush Pointy Chair', 'MG Square Wooden Chair', 'MG Steampunk Chair', 'MG Triangle Chair']
+

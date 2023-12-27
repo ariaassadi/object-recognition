@@ -7,7 +7,7 @@ folder2 = 'Mimmi Gustafsson/Mimmi Gustafsson Stadens ansikten'
 folder3 = 'Mimmi Gustafsson/Stadens ansikten Mimmi Gustafsson MG 101 - 2190'
 train_folder = 'processed_data/images/train/'
 val_folder = 'processed_data/images/val/'
-output_folder = 'processed_data/images/train_big/'
+output_folder = 'processed_data/images/dataset_big/'
 
 # Create output folder if it doesn't exist
 if not os.path.exists(output_folder):
