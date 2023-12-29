@@ -34,13 +34,20 @@ datasets
 │   └── labels
 └── train-and-val-split.py
 ```
-This script should create a new folder called `processed_data/images/train_big`
+This script should create a new folder called `processed_data/images/train_big`.
 
 ## Step 4
-Execute the NN-model to predicts labels and store them in `processed_data/labels/train_big`. Manually adjust all these labels.
+Copy the folder `processed_data/images/train_big` to the store space on Alvis.
 
 ## Step 5
-Manually adjust all the labels in `processed_data/labels/train_big`. This can be done by using label-studio.
+Execute the NN-model to predicts labels and store them in `processed_data/labels/dataset_big_old`. Copy the results to `processed_data/labels/dataset_big`.
 
 ## Step 6
+Manually adjust all the labels in `processed_data/labels/dataset_big`. This can be done by using label-studio.
+
+## Step 7
+### train-val-val-test-split.py
+This will create new folders for training, testing, and validating the model. 
+
+## Step 8
 The preparation for `datasets/` is completed. The model can now be trained on the big training dataset.
